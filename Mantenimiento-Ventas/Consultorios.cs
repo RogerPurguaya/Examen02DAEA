@@ -28,7 +28,7 @@ namespace Mantenimiento_Ventas
 
             conn.Open();
            
-            SqlCommand cmd = new SqlCommand("SELECT hos_codigo, hos_nombre FROM hospital;", conn);
+            SqlCommand cmd = new SqlCommand("SELECT hos_codigo, hos_nombre FROM hospital WHERE hos_activo = 1;", conn);
             SqlDataReader reader = cmd.ExecuteReader();
             
             String codigo = "";

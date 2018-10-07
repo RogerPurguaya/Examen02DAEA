@@ -79,7 +79,7 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(120, 30);
             this.btnLogin.TabIndex = 37;
-            this.btnLogin.Text = "Buscar Triaje";
+            this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
@@ -99,6 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Mantenimiento_Ventas.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(289, 175);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLogin);

@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnListaMedicos = new System.Windows.Forms.Button();
+            this.txtMedico = new System.Windows.Forms.TextBox();
+            this.btnListaTriajes = new System.Windows.Forms.Button();
+            this.btnListaConsultorios = new System.Windows.Forms.Button();
+            this.txtConsultorio = new System.Windows.Forms.TextBox();
+            this.txtTriaje = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.RichTextBox();
             this.txtFecha = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,13 +49,6 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
-            this.txtDescripcion = new System.Windows.Forms.RichTextBox();
-            this.btnListaTriajes = new System.Windows.Forms.Button();
-            this.btnListaConsultorios = new System.Windows.Forms.Button();
-            this.txtConsultorio = new System.Windows.Forms.TextBox();
-            this.txtTriaje = new System.Windows.Forms.TextBox();
-            this.btnListaMedicos = new System.Windows.Forms.Button();
-            this.txtMedico = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableListado)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,74 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Producto";
+            // 
+            // btnListaMedicos
+            // 
+            this.btnListaMedicos.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnListaMedicos.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaMedicos.Location = new System.Drawing.Point(234, 26);
+            this.btnListaMedicos.Name = "btnListaMedicos";
+            this.btnListaMedicos.Size = new System.Drawing.Size(142, 30);
+            this.btnListaMedicos.TabIndex = 30;
+            this.btnListaMedicos.Text = "Ver Lista Médicos";
+            this.btnListaMedicos.UseVisualStyleBackColor = false;
+            this.btnListaMedicos.Click += new System.EventHandler(this.btnListaMedicos_Click);
+            // 
+            // txtMedico
+            // 
+            this.txtMedico.Location = new System.Drawing.Point(113, 32);
+            this.txtMedico.Name = "txtMedico";
+            this.txtMedico.ReadOnly = true;
+            this.txtMedico.Size = new System.Drawing.Size(115, 20);
+            this.txtMedico.TabIndex = 29;
+            // 
+            // btnListaTriajes
+            // 
+            this.btnListaTriajes.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnListaTriajes.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaTriajes.Location = new System.Drawing.Point(234, 116);
+            this.btnListaTriajes.Name = "btnListaTriajes";
+            this.btnListaTriajes.Size = new System.Drawing.Size(142, 30);
+            this.btnListaTriajes.TabIndex = 28;
+            this.btnListaTriajes.Text = "Ver Lista Triajes";
+            this.btnListaTriajes.UseVisualStyleBackColor = false;
+            this.btnListaTriajes.Click += new System.EventHandler(this.btnListaTriajes_Click);
+            // 
+            // btnListaConsultorios
+            // 
+            this.btnListaConsultorios.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnListaConsultorios.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaConsultorios.Location = new System.Drawing.Point(234, 71);
+            this.btnListaConsultorios.Name = "btnListaConsultorios";
+            this.btnListaConsultorios.Size = new System.Drawing.Size(142, 30);
+            this.btnListaConsultorios.TabIndex = 27;
+            this.btnListaConsultorios.Text = "Ver Lista Consultorios";
+            this.btnListaConsultorios.UseVisualStyleBackColor = false;
+            this.btnListaConsultorios.Click += new System.EventHandler(this.btnListaConsultorios_Click);
+            // 
+            // txtConsultorio
+            // 
+            this.txtConsultorio.Location = new System.Drawing.Point(113, 77);
+            this.txtConsultorio.Name = "txtConsultorio";
+            this.txtConsultorio.ReadOnly = true;
+            this.txtConsultorio.Size = new System.Drawing.Size(115, 20);
+            this.txtConsultorio.TabIndex = 26;
+            // 
+            // txtTriaje
+            // 
+            this.txtTriaje.Location = new System.Drawing.Point(113, 122);
+            this.txtTriaje.Name = "txtTriaje";
+            this.txtTriaje.ReadOnly = true;
+            this.txtTriaje.Size = new System.Drawing.Size(115, 20);
+            this.txtTriaje.TabIndex = 25;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(397, 37);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(233, 63);
+            this.txtDescripcion.TabIndex = 17;
+            this.txtDescripcion.Text = "";
             // 
             // txtFecha
             // 
@@ -214,78 +282,11 @@
             this.btnListar.UseVisualStyleBackColor = false;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(397, 37);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(233, 63);
-            this.txtDescripcion.TabIndex = 17;
-            this.txtDescripcion.Text = "";
-            // 
-            // btnListaTriajes
-            // 
-            this.btnListaTriajes.BackColor = System.Drawing.Color.YellowGreen;
-            this.btnListaTriajes.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaTriajes.Location = new System.Drawing.Point(234, 116);
-            this.btnListaTriajes.Name = "btnListaTriajes";
-            this.btnListaTriajes.Size = new System.Drawing.Size(142, 30);
-            this.btnListaTriajes.TabIndex = 28;
-            this.btnListaTriajes.Text = "Ver Lista Triajes";
-            this.btnListaTriajes.UseVisualStyleBackColor = false;
-            this.btnListaTriajes.Click += new System.EventHandler(this.btnListaTriajes_Click);
-            // 
-            // btnListaConsultorios
-            // 
-            this.btnListaConsultorios.BackColor = System.Drawing.Color.YellowGreen;
-            this.btnListaConsultorios.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaConsultorios.Location = new System.Drawing.Point(234, 71);
-            this.btnListaConsultorios.Name = "btnListaConsultorios";
-            this.btnListaConsultorios.Size = new System.Drawing.Size(142, 30);
-            this.btnListaConsultorios.TabIndex = 27;
-            this.btnListaConsultorios.Text = "Ver Lista Consultorios";
-            this.btnListaConsultorios.UseVisualStyleBackColor = false;
-            this.btnListaConsultorios.Click += new System.EventHandler(this.btnListaConsultorios_Click);
-            // 
-            // txtConsultorio
-            // 
-            this.txtConsultorio.Location = new System.Drawing.Point(113, 77);
-            this.txtConsultorio.Name = "txtConsultorio";
-            this.txtConsultorio.ReadOnly = true;
-            this.txtConsultorio.Size = new System.Drawing.Size(115, 20);
-            this.txtConsultorio.TabIndex = 26;
-            // 
-            // txtTriaje
-            // 
-            this.txtTriaje.Location = new System.Drawing.Point(113, 122);
-            this.txtTriaje.Name = "txtTriaje";
-            this.txtTriaje.ReadOnly = true;
-            this.txtTriaje.Size = new System.Drawing.Size(115, 20);
-            this.txtTriaje.TabIndex = 25;
-            // 
-            // btnListaMedicos
-            // 
-            this.btnListaMedicos.BackColor = System.Drawing.Color.YellowGreen;
-            this.btnListaMedicos.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaMedicos.Location = new System.Drawing.Point(234, 26);
-            this.btnListaMedicos.Name = "btnListaMedicos";
-            this.btnListaMedicos.Size = new System.Drawing.Size(142, 30);
-            this.btnListaMedicos.TabIndex = 30;
-            this.btnListaMedicos.Text = "Ver Lista Médicos";
-            this.btnListaMedicos.UseVisualStyleBackColor = false;
-            this.btnListaMedicos.Click += new System.EventHandler(this.btnListaMedicos_Click);
-            // 
-            // txtMedico
-            // 
-            this.txtMedico.Location = new System.Drawing.Point(113, 32);
-            this.txtMedico.Name = "txtMedico";
-            this.txtMedico.ReadOnly = true;
-            this.txtMedico.Size = new System.Drawing.Size(115, 20);
-            this.txtMedico.TabIndex = 29;
-            // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Mantenimiento_Ventas.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnEiminar);
             this.Controls.Add(this.btnModificar);

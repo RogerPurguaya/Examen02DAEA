@@ -275,6 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Mantenimiento_Ventas.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(725, 450);
             this.Controls.Add(this.btnEiminar);
             this.Controls.Add(this.btnModificar);

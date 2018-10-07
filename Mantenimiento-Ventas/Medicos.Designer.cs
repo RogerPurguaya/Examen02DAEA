@@ -30,10 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbHospital = new System.Windows.Forms.ComboBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtFechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.LinkLabel();
             this.txtFechaNac = new System.Windows.Forms.DateTimePicker();
             this.txtEspecialidad = new System.Windows.Forms.TextBox();
-            this.txtHospital = new System.Windows.Forms.TextBox();
             this.txtSueldo = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtDNI = new System.Windows.Forms.TextBox();
@@ -48,10 +52,6 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.txtFechaInicio = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNombres = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableListado)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.cmbHospital);
             this.groupBox1.Controls.Add(this.txtNombres);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtFechaInicio);
@@ -77,7 +78,6 @@
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Controls.Add(this.txtFechaNac);
             this.groupBox1.Controls.Add(this.txtEspecialidad);
-            this.groupBox1.Controls.Add(this.txtHospital);
             this.groupBox1.Controls.Add(this.txtSueldo);
             this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Controls.Add(this.txtDNI);
@@ -94,6 +94,51 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Médico";
+            // 
+            // cmbHospital
+            // 
+            this.cmbHospital.FormattingEnabled = true;
+            this.cmbHospital.Location = new System.Drawing.Point(18, 141);
+            this.cmbHospital.Name = "cmbHospital";
+            this.cmbHospital.Size = new System.Drawing.Size(114, 23);
+            this.cmbHospital.TabIndex = 22;
+            // 
+            // txtNombres
+            // 
+            this.txtNombres.Location = new System.Drawing.Point(19, 76);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(234, 23);
+            this.txtNombres.TabIndex = 20;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Silver;
+            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(16, 56);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 17);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Nombres";
+            // 
+            // txtFechaInicio
+            // 
+            this.txtFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFechaInicio.Location = new System.Drawing.Point(321, 252);
+            this.txtFechaInicio.Name = "txtFechaInicio";
+            this.txtFechaInicio.Size = new System.Drawing.Size(147, 23);
+            this.txtFechaInicio.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(318, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 17);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Fecha Inicio.";
             // 
             // txtID
             // 
@@ -121,13 +166,6 @@
             this.txtEspecialidad.Name = "txtEspecialidad";
             this.txtEspecialidad.Size = new System.Drawing.Size(234, 23);
             this.txtEspecialidad.TabIndex = 13;
-            // 
-            // txtHospital
-            // 
-            this.txtHospital.Location = new System.Drawing.Point(19, 133);
-            this.txtHospital.Name = "txtHospital";
-            this.txtHospital.Size = new System.Drawing.Size(234, 23);
-            this.txtHospital.TabIndex = 12;
             // 
             // txtSueldo
             // 
@@ -277,48 +315,11 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // txtFechaInicio
-            // 
-            this.txtFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtFechaInicio.Location = new System.Drawing.Point(321, 252);
-            this.txtFechaInicio.Name = "txtFechaInicio";
-            this.txtFechaInicio.Size = new System.Drawing.Size(147, 23);
-            this.txtFechaInicio.TabIndex = 18;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(318, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Fecha Inicio.";
-            // 
-            // txtNombres
-            // 
-            this.txtNombres.Location = new System.Drawing.Point(19, 76);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(234, 23);
-            this.txtNombres.TabIndex = 20;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Silver;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 56);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 17);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Nombres";
-            // 
             // Medicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Mantenimiento_Ventas.Properties.Resources.back;
+            this.BackgroundImage = global::Mantenimiento_Ventas.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(692, 510);
             this.Controls.Add(this.btnLimpiar);
@@ -345,7 +346,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker txtFechaNac;
         private System.Windows.Forms.TextBox txtEspecialidad;
-        private System.Windows.Forms.TextBox txtHospital;
         private System.Windows.Forms.TextBox txtSueldo;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtDNI;
@@ -365,5 +365,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker txtFechaInicio;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmbHospital;
     }
 }

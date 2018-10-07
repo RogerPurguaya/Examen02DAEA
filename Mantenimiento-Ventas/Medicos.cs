@@ -25,6 +25,21 @@ namespace Mantenimiento_Ventas
         {
             String str = "Server=.;DataBase=sistema;Integrated Security=true;";
             conn = new SqlConnection(str);
+
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT hos_codigo, hos_nombre FROM hospital WHERE hos_activo = 1;", conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            String codigo = "";
+            while (reader.Read())
+            {
+                codigo = (String)reader.GetValue(0);
+                cmbHospital.Items.Add(codigo);
+            }
+            cmbHospital.SelectedItem = this.IDHospital;
+            conn.Close();
+
         }
 
         private void btnListar_Click(object sender, EventArgs e)
@@ -40,7 +55,7 @@ namespace Mantenimiento_Ventas
                 " med_fecnac, med_sueldo, med_espec, med_fecini, " +
                 " med_direc) VALUES ("+
                 "'" + generateID() + "' , " +
-                "'" + txtHospital.Text + "' , " +
+                "'" + cmbHospital.SelectedItem.ToString() + "' , " +
                 "'" + txtDNI.Text + "' , " +
                 "'" + txtNombres.Text + "' , " +
                 "'" + txtFechaNac.Text + "' , " +
@@ -75,7 +90,7 @@ namespace Mantenimiento_Ventas
             if (tableListado.SelectedRows.Count > 0)
             {
                 txtID.Text        = tableListado.SelectedRows[0].Cells[0].Value.ToString();
-                txtHospital.Text  = tableListado.SelectedRows[0].Cells[1].Value.ToString();
+                cmbHospital.SelectedItem  = tableListado.SelectedRows[0].Cells[1].Value.ToString();
                 txtDNI.Text       = tableListado.SelectedRows[0].Cells[2].Value.ToString();
                 txtNombres.Text   = tableListado.SelectedRows[0].Cells[3].Value.ToString();
                 txtFechaNac.Text  = tableListado.SelectedRows[0].Cells[4].Value.ToString();
@@ -92,7 +107,7 @@ namespace Mantenimiento_Ventas
 
             String sql = "UPDATE medico SET "   +
                 "med_dni='"       + txtDNI.Text      + "' ," +
-                "med_hospital='"  + txtHospital.Text + "' ," +
+                "med_hospital='"  + cmbHospital.SelectedItem.ToString() + "' ," +
                 "med_nomape='"    + txtNombres.Text  + "' ," +
                 "med_sueldo='"    + txtSueldo.Text   + "' ," +
                 "med_espec='"     + txtEspecialidad.Text  + "' ," +

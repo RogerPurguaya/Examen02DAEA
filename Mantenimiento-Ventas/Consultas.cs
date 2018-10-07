@@ -53,6 +53,12 @@ namespace Mantenimiento_Ventas
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (!validateDescription(50, txtDescripcion.Text))
+            {
+                MessageBox.Show("La descripción no debe exceder los 150 carateres.");
+                return;
+            }
+
             conn.Open();
             String sp = "INSERT INTO consulta (cta_codigo, cta_consultorio, cta_triaje, " +
                 "cta_medico, cta_fecha, cta_desdiag) VALUES (" +
@@ -85,6 +91,12 @@ namespace Mantenimiento_Ventas
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            if (!validateDescription(50, txtDescripcion.Text))
+            {
+                MessageBox.Show("La descripción no debe exceder los 150 carateres.");
+                return;
+            }
+
             conn.Open();
 
             String sql = "UPDATE consulta SET " +
@@ -231,6 +243,15 @@ namespace Mantenimiento_Ventas
                 reader.Close();
                 return "C001";
             }
+        }
+
+        private Boolean validateDescription (int size, String text)
+        {
+            if (text.Length > size)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

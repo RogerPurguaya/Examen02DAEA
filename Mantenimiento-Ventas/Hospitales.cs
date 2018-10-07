@@ -34,7 +34,7 @@ namespace Mantenimiento_Ventas
 
         private void listarTabla()
         {
-            String sql = "SELECT * FROM hospital";
+            String sql = "SELECT * FROM hospital WHERE hos_activo = 1;";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -48,8 +48,9 @@ namespace Mantenimiento_Ventas
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             conn.Open();
-            String sp = "INSERT INTO hospital ( hos_nombre, hos_direc, hos_fono, hos_ambul, hos_admin" +
+            String sp = "INSERT INTO hospital (hos_codigo, hos_nombre, hos_direc, hos_fono, hos_ambul, hos_admin" +
                 ") VALUES (" +
+                "'" + generateID() + "' , " +
                 "'" + txtNombre.Text + "' , " +
                 "'" + txtDireccion.Text + "' , " +
                 "'" + txtTelefono.Text + "' , " +
@@ -119,8 +120,9 @@ namespace Mantenimiento_Ventas
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             conn.Open();
-            String sql = "DELETE hospital WHERE hos_codigo = '" + txtID.Text + "';";
-
+            //String sql = "DELETE hospital WHERE hos_codigo = '" + txtID.Text + "';";
+            String sql = "UPDATE hospital SET " +
+                "hos_activo = 0 WHERE hos_codigo = '" + txtID.Text + "'";
             Console.WriteLine(sql);
             SqlCommand query = new SqlCommand(sql, conn);
             query.CommandType = CommandType.Text;
@@ -158,6 +160,37 @@ namespace Mantenimiento_Ventas
                 txtTelefono.Text = tableListado.SelectedRows[0].Cells[3].Value.ToString();
                 txtAmbulancia.Text = tableListado.SelectedRows[0].Cells[4].Value.ToString();
                 txtAdmin.Text = tableListado.SelectedRows[0].Cells[5].Value.ToString();
+            }
+        }
+
+        private String generateID()
+        {
+            String sql = "SELECT TOP 1 hos_codigo FROM hospital ORDER BY hos_codigo DESC;";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            try
+            {
+                String id = (String)reader.GetValue(0);
+                String prefix = id.Substring(0, 1);
+                int newID = Int32.Parse(id.Substring(1)) + 1;
+
+                if (newID < 99)
+                {
+                    id = prefix + "0" + newID;
+                }
+                else
+                {
+                    id = prefix + newID;
+                }
+                reader.Close();
+                return id;
+            }
+            catch (Exception)
+            {
+                reader.Close();
+                return "H001";
             }
         }
     }
