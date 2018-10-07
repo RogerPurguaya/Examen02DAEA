@@ -1,0 +1,51 @@
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\bin\Debug\Mantenimiento-Ventas.exe.config
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\bin\Debug\Mantenimiento-Ventas.exe
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\bin\Debug\Mantenimiento-Ventas.pdb
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\bin\Debug\EntityFramework.dll
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\bin\Debug\EntityFramework.SqlServer.dll
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\bin\Debug\EntityFramework.xml
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\bin\Debug\EntityFramework.SqlServer.xml
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csprojAssemblyReference.cache
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Mantenimientos.resources
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Properties.Resources.resources
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Usuarios.resources
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csproj.GenerateResource.cache
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csproj.CoreCompileInputs.cache
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csproj.CopyComplete
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.exe
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.pdb
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Productos.resources
+D:\TECSUP\Semestre 6\Visual Studio\Lab05 - Roger Purguaya Lázaro\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Proveedores.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\bin\Debug\Mantenimiento-Ventas.exe.config
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\bin\Debug\Mantenimiento-Ventas.exe
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\bin\Debug\Mantenimiento-Ventas.pdb
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\bin\Debug\EntityFramework.dll
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\bin\Debug\EntityFramework.xml
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Hospitales.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Login.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Mantenimientos.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Enfermeras.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Pacientes.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Properties.Resources.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Proveedores.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Medicos.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csproj.GenerateResource.cache
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csproj.CopyComplete
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.exe
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.pdb
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento-Ventas.csprojAssemblyReference.cache
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Consultas.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Consultorios.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.ListaPacientes.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Triajes.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.ListaEnfermeras.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.ListaConsultorios.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.ListaMedicos.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.ListaTriajes.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Pagos.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.TiposPago.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.ListaProveedores.resources
+D:\PROYECTOS\Examen C#\Lab-05\Mantenimiento-Ventas\obj\Debug\Mantenimiento_Ventas.Medicinas.resources
